@@ -16,7 +16,8 @@ x | Autoprint x
 print(x) | Explicitly print x
 x <- 1:20 | Assign the integer sequence containing values 1 through 20 to x
 
-###Concatenation
+### Concatenation
+
 Code | Explanation
 ----------------- | ---------------------------------------------------
 x <- c(0.5, 0.6) | **CONCATENATES** (combines) a vector of numerical objects
@@ -26,7 +27,8 @@ x <- c(1+0i, 2+4i) | Concatenates a vector of complex objects
 x <- c("a", "b", "c") | Concatenates a vector of characters
 x <- vector("numeric", length = 10) | creates a vector of 10 numeric objects, all with value 0
 
-###Coercion
+### Coercion
+
 Code | Explanation
 ----------------- | ---------------------------------------------------
 y <- c(TRUE, 2) | Concatenates (and coerces) a numerical vector of value [1, 2]
@@ -37,7 +39,8 @@ as.logical(x) | Explicitly coerces objects from the x class to logical types
 as.character(x) | Explicitly coerces objects from the x class to character types
 x <- list(1, "a", TRUE, 1 + 4i) | Creates a list with different object class types
 
-###Matrices
+### Matrices
+
 Code | Explanation
 ----------------- | ---------------------------------------------------
 m <- matrix(nrow = 2, ncol = 3) | Creates an empty 2 x 3 matrix
