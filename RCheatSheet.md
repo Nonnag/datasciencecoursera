@@ -17,6 +17,8 @@ print(x) | Explicitly print x
 x <- 1:20 | Assign the integer sequence containing values 1 through 20 to x
 
 ###Concatenation
+Code | Explanation
+----------------- | ---------------------------------------------------
 x <- c(0.5, 0.6) | **CONCATENATES** (combines) a vector of numerical objects
 x <- c(TRUE, FALSE) | Concatenates a vector of logical objects
 x <- c(T, F) | Concatenates a vector of logical objects (just like above)
@@ -25,6 +27,8 @@ x <- c("a", "b", "c") | Concatenates a vector of characters
 x <- vector("numeric", length = 10) | creates a vector of 10 numeric objects, all with value 0
 
 ###Coercion
+Code | Explanation
+----------------- | ---------------------------------------------------
 y <- c(TRUE, 2) | Concatenates (and coerces) a numerical vector of value [1, 2]
 y <- c(1.7, "a") | Concatenates (and coerces) a character vector of value ["1.7", "a"]
 class(y) | returns the class of y
@@ -34,6 +38,8 @@ as.character(x) | Explicitly coerces objects from the x class to character types
 x <- list(1, "a", TRUE, 1 + 4i) | Creates a list with different object class types
 
 ###Matrices
+Code | Explanation
+----------------- | ---------------------------------------------------
 m <- matrix(nrow = 2, ncol = 3) | Creates an empty 2 x 3 matrix
 m <- matrix(1:6, nrow = 2, ncol = 3) | Creates an empty 2 x 3 matrix
 dim(m) | returns the dimensions of m
@@ -42,6 +48,8 @@ cbind(x, y) | combines x and y into a matrix where they each have their own colu
 rbind(x, y) | combines x and y into a matrix where they each have their own rows.
 
 ###Factors
+Code | Explanation
+----------------- | ---------------------------------------------------
 x <- factor(c("yes", "yes", "no", "yes", "no")) | Creates a **FACTOR**
 table(x) | returns the quantities of each type of **LEVEL**
 attr(,"levels") | prints each unique level in the factor
