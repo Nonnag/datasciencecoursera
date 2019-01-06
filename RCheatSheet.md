@@ -50,7 +50,7 @@ attributes(m) | returns attributes (dimensions) of m
 cbind(x, y) | combines x and y into a matrix where they each have their own columns.
 rbind(x, y) | combines x and y into a matrix where they each have their own rows.
 
-###Factors
+### Factors
 
 Code | Explanation
 ----------------- | ---------------------------------------------------
@@ -62,7 +62,7 @@ attr(,"levels") | prints each unique level in the factor
 
 Code | Explanation
 ----------------- | ---------------------------------------------------
-x <- 1:3 | -
+x <- 1:3 | creates vector x with values 1 through 3
 names(x) | Returns the names of objects
 names(x) <- c("foo", "bar", "norf") | assigns names to the corresponding objects
 dimnames(m) <- list(c("a", "b"), c("c", "d")) | Names columns and rows of matrix m
@@ -98,10 +98,10 @@ Important arguments:
 * skip:  the number of lines to skip from the beginning
 * stringAsFactors:  should character variables be coded as factors?
 
-data <- read.table("foo.txt")
+**data <- read.table("foo.txt")**
 
 For the above code, R will automatically:
-* skip lines that begin with /#
+* skip lines that begin with #
 * figure out how many rows there are (and how much memory needs to be allocated)
 * figure what type of variable is in each column of the table.  Telling R all these things directly makes R run faster and more efficiently
 * read.csv is identical to read.table except the default separator is a comma.
